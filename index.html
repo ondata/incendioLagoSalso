@@ -29,15 +29,7 @@
 
     <script>
 
-        var mapMinZoom = 0;
-        var mapMaxZoom = 6;
-
         var map = L.map('map').setView([-80, -120], 4);
-
-        var mapBounds = new L.LatLngBounds(
-            map.unproject([0, 8840], mapMaxZoom),
-            map.unproject([8840, 3854], mapMaxZoom));
-
 
         var dopo = L.tileLayer('./a/{z}/{x}/{y}.png', {
             minZoom: 0,
