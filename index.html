@@ -32,15 +32,15 @@
         var map = L.map('map').setView([-80, -120], 5);
 
         var dopo = L.tileLayer('./a/{z}/{x}/{y}.png', {
-            minZoom: 5,
-            maxZoom: 7,
+            minZoom: 0,
+            maxZoom: 6,
             tms: true,
             noWrap: true
         }).addTo(map);
 
         var prima = L.tileLayer('./b/{z}/{x}/{y}.png', {
-            minZoom: 5,
-            maxZoom: 7,
+            minZoom: 0,
+            maxZoom: 6,
             tms: true,
             noWrap: true
         }).addTo(map)
